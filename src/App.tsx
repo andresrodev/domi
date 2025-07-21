@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { 
-  Star, 
-  Truck, 
-  Shield, 
-  Gift, 
-  Heart, 
+import {
+  Star,
+  Truck,
+  Shield,
+  Gift,
+  Heart,
   ChevronDown,
   Mail,
   Phone,
@@ -102,20 +102,20 @@ function App() {
             {/* Logo placeholder - replace with actual logo */}
             <div className="flex-shrink-0">
               <div className="w-32 h-8 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded flex items-center justify-center">
-                 <svg fill="#ffffff" height="15px" width="15px" version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-1077 923 256 256" xml:space="preserve">
+                <svg fill="#ffffff" height="15px" width="15px" version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-1077 923 256 256" xml:space="preserve">
 
-<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                  <g id="SVGRepo_bgCarrier" stroke-width="0" />
 
-<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
 
-<g id="SVGRepo_iconCarrier"> <path d="M-827.3,979.5c0,0-2.2-13.1-5.2-17.1c-3.8-5.1-16.4-12.1-16.4-12.1c-2.6,3.7,3.6-9.8,7.3-22.7c0,0-24.2,3.2-46.8,27.6 c-6.4,7-17.8,38.6-17.8,38.6l-44.7,20.5c-31.1,12.9-82.7,26.2-82.7,97.7v30.5c-2.5-1.7-15.7-12.7-15.5-29.9 c0.1-13.6,1.9-27.5,3.6-39.9c3.1-22.7,5.5-47.1-3.7-57.6c-4.2-4.8-10.2-7.3-17.7-7.3c-4.9,0-8.9,4-8.9,8.9c0,4.9,4,8.9,8.9,8.9 c2.2,0,3.6,0.4,4.3,1.2c3.8,4.4,1.5,28.1-0.6,43.4c-1.7,12.9-3.7,27.5-3.7,42.2c0,16.2,5.6,31.4,15.7,42.8 c11.5,12.9,27.7,19.7,46.8,19.7c0,0,0,0,0,0h62.5h8.9h17.9c4.9,0,8.9-4,8.9-8.9s-4-8.9-8.9-8.9l-19.6,0l9.5-31.3 c0-4.5-1-8.8-2.7-12.6c-7.1-12.1-19.9-19.6-34-19.6c-6.2,0-12,1.4-17.5,4.1l-2.9-5.8c6.4-3.2,13.2-4.8,20.4-4.8 c16.8,0,32.3,9.2,40.3,24l0,0l0,0c0,0,33.1,50.7,36.4,57.9c0,0.1,0.1,0.1,0.1,0.2c0.9,2.7,3.1,4.7,5.9,5.3c0.1,0,0.2,0,0.3,0.1 c0.5,0.1,0.9,0.3,1.4,0.3h9.8c4.4,0,8.1-3.6,8.1-8.1c0-4.4-3.6-8.1-8.1-8.1h0.2c0,0-26.6-47.4-21.4-64.2 c23.7-37.2,36.5-72.5,36.5-72.5c5.1-11.6,18.2-20.5,20-21.7c4-2.7,9.5-6.1,10-11.3C-822.2,986.7-826,981.7-827.3,979.5z"/> </g>
+                  <g id="SVGRepo_iconCarrier"> <path d="M-827.3,979.5c0,0-2.2-13.1-5.2-17.1c-3.8-5.1-16.4-12.1-16.4-12.1c-2.6,3.7,3.6-9.8,7.3-22.7c0,0-24.2,3.2-46.8,27.6 c-6.4,7-17.8,38.6-17.8,38.6l-44.7,20.5c-31.1,12.9-82.7,26.2-82.7,97.7v30.5c-2.5-1.7-15.7-12.7-15.5-29.9 c0.1-13.6,1.9-27.5,3.6-39.9c3.1-22.7,5.5-47.1-3.7-57.6c-4.2-4.8-10.2-7.3-17.7-7.3c-4.9,0-8.9,4-8.9,8.9c0,4.9,4,8.9,8.9,8.9 c2.2,0,3.6,0.4,4.3,1.2c3.8,4.4,1.5,28.1-0.6,43.4c-1.7,12.9-3.7,27.5-3.7,42.2c0,16.2,5.6,31.4,15.7,42.8 c11.5,12.9,27.7,19.7,46.8,19.7c0,0,0,0,0,0h62.5h8.9h17.9c4.9,0,8.9-4,8.9-8.9s-4-8.9-8.9-8.9l-19.6,0l9.5-31.3 c0-4.5-1-8.8-2.7-12.6c-7.1-12.1-19.9-19.6-34-19.6c-6.2,0-12,1.4-17.5,4.1l-2.9-5.8c6.4-3.2,13.2-4.8,20.4-4.8 c16.8,0,32.3,9.2,40.3,24l0,0l0,0c0,0,33.1,50.7,36.4,57.9c0,0.1,0.1,0.1,0.1,0.2c0.9,2.7,3.1,4.7,5.9,5.3c0.1,0,0.2,0,0.3,0.1 c0.5,0.1,0.9,0.3,1.4,0.3h9.8c4.4,0,8.1-3.6,8.1-8.1c0-4.4-3.6-8.1-8.1-8.1h0.2c0,0-26.6-47.4-21.4-64.2 c23.7-37.2,36.5-72.5,36.5-72.5c5.1-11.6,18.2-20.5,20-21.7c4-2.7,9.5-6.1,10-11.3C-822.2,986.7-826,981.7-827.3,979.5z" /> </g>
 
-</svg>
+                </svg>
                 <span className="text-white font-serif font-bold text-lg">
                   &nbsp;DOMI</span>
               </div>
             </div>
-            
+
             {/* Desktop Navigation */}
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-8">
@@ -169,8 +169,20 @@ function App() {
         <div className="absolute inset-0 bg-black/10 pointer-events-none z-10" />
         {/* Sparkle overlay */}
         <div className="absolute inset-0 pointer-events-none z-20">
-          <div className="w-full h-full sparkle-animation" />
+          <div
+            className="w-4 h-4 twinkling-star absolute"
+            style={{ top: '32%', left: '15%' }}
+          />
+          <div
+            className="w-4 h-4 twinkling-star absolute"
+            style={{ top: '60%', left: '23%', animationDelay: '0.6s' }}
+          />
+          <div
+            className={`w-5 h-5 twinkling-star absolute bg-fade-in-slow${bgVisible ? ' visible' : ''}`}
+            style={{ top: '52%', left: '25%', animationDelay: '1.2s' }}
+          />
         </div>
+
         <div className="relative max-w-7xl mx-auto z-30">
           <div className="text-center py-20 pl-20">
             <h1 className="text-5xl md:text-7xl font-serif font-light text-gray-900 mb-8 leading-tight">
@@ -194,7 +206,7 @@ function App() {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-4xl md:text-5xl font-serif font-light text-gray-900 mb-8">
-                Elegancia que trasciende 
+                Elegancia que trasciende
                 <span className="text-yellow-600"> el tiempo</span>
               </h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
@@ -219,8 +231,8 @@ function App() {
               </div>
             </div>
             <div className="relative">
-              <img 
-                src="https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg?auto=compress&cs=tinysrgb&w=800" 
+              <img
+                src="https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg?auto=compress&cs=tinysrgb&w=800"
                 alt="Joyería elegante DOMI"
                 className="w-full h-96 object-cover rounded-2xl shadow-2xl"
               />
@@ -246,8 +258,8 @@ function App() {
             {collections.map((collection, index) => (
               <div key={index} className="group cursor-pointer">
                 <div className="relative overflow-hidden rounded-2xl mb-6">
-                  <img 
-                    src={collection.image} 
+                  <img
+                    src={collection.image}
                     alt={collection.name}
                     className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110"
                   />
@@ -326,7 +338,7 @@ function App() {
           <p className="text-xl text-gray-300 mb-12 leading-relaxed">
             Sé la primera en conocer nuestras nuevas colecciones, ofertas exclusivas y eventos especiales
           </p>
-          
+
           <form onSubmit={handleNewsletterSubmit} className="max-w-md mx-auto mb-8">
             <div className="flex gap-4">
               <input
@@ -370,21 +382,21 @@ function App() {
               <div className="w-32 h-8 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded flex items-center justify-center mb-6">
                 <svg fill="#ffffff" height="15px" width="15px" version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-1077 923 256 256" xml:space="preserve">
 
-<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                  <g id="SVGRepo_bgCarrier" stroke-width="0" />
 
-<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
 
-<g id="SVGRepo_iconCarrier"> <path d="M-827.3,979.5c0,0-2.2-13.1-5.2-17.1c-3.8-5.1-16.4-12.1-16.4-12.1c-2.6,3.7,3.6-9.8,7.3-22.7c0,0-24.2,3.2-46.8,27.6 c-6.4,7-17.8,38.6-17.8,38.6l-44.7,20.5c-31.1,12.9-82.7,26.2-82.7,97.7v30.5c-2.5-1.7-15.7-12.7-15.5-29.9 c0.1-13.6,1.9-27.5,3.6-39.9c3.1-22.7,5.5-47.1-3.7-57.6c-4.2-4.8-10.2-7.3-17.7-7.3c-4.9,0-8.9,4-8.9,8.9c0,4.9,4,8.9,8.9,8.9 c2.2,0,3.6,0.4,4.3,1.2c3.8,4.4,1.5,28.1-0.6,43.4c-1.7,12.9-3.7,27.5-3.7,42.2c0,16.2,5.6,31.4,15.7,42.8 c11.5,12.9,27.7,19.7,46.8,19.7c0,0,0,0,0,0h62.5h8.9h17.9c4.9,0,8.9-4,8.9-8.9s-4-8.9-8.9-8.9l-19.6,0l9.5-31.3 c0-4.5-1-8.8-2.7-12.6c-7.1-12.1-19.9-19.6-34-19.6c-6.2,0-12,1.4-17.5,4.1l-2.9-5.8c6.4-3.2,13.2-4.8,20.4-4.8 c16.8,0,32.3,9.2,40.3,24l0,0l0,0c0,0,33.1,50.7,36.4,57.9c0,0.1,0.1,0.1,0.1,0.2c0.9,2.7,3.1,4.7,5.9,5.3c0.1,0,0.2,0,0.3,0.1 c0.5,0.1,0.9,0.3,1.4,0.3h9.8c4.4,0,8.1-3.6,8.1-8.1c0-4.4-3.6-8.1-8.1-8.1h0.2c0,0-26.6-47.4-21.4-64.2 c23.7-37.2,36.5-72.5,36.5-72.5c5.1-11.6,18.2-20.5,20-21.7c4-2.7,9.5-6.1,10-11.3C-822.2,986.7-826,981.7-827.3,979.5z"/> </g>
+                  <g id="SVGRepo_iconCarrier"> <path d="M-827.3,979.5c0,0-2.2-13.1-5.2-17.1c-3.8-5.1-16.4-12.1-16.4-12.1c-2.6,3.7,3.6-9.8,7.3-22.7c0,0-24.2,3.2-46.8,27.6 c-6.4,7-17.8,38.6-17.8,38.6l-44.7,20.5c-31.1,12.9-82.7,26.2-82.7,97.7v30.5c-2.5-1.7-15.7-12.7-15.5-29.9 c0.1-13.6,1.9-27.5,3.6-39.9c3.1-22.7,5.5-47.1-3.7-57.6c-4.2-4.8-10.2-7.3-17.7-7.3c-4.9,0-8.9,4-8.9,8.9c0,4.9,4,8.9,8.9,8.9 c2.2,0,3.6,0.4,4.3,1.2c3.8,4.4,1.5,28.1-0.6,43.4c-1.7,12.9-3.7,27.5-3.7,42.2c0,16.2,5.6,31.4,15.7,42.8 c11.5,12.9,27.7,19.7,46.8,19.7c0,0,0,0,0,0h62.5h8.9h17.9c4.9,0,8.9-4,8.9-8.9s-4-8.9-8.9-8.9l-19.6,0l9.5-31.3 c0-4.5-1-8.8-2.7-12.6c-7.1-12.1-19.9-19.6-34-19.6c-6.2,0-12,1.4-17.5,4.1l-2.9-5.8c6.4-3.2,13.2-4.8,20.4-4.8 c16.8,0,32.3,9.2,40.3,24l0,0l0,0c0,0,33.1,50.7,36.4,57.9c0,0.1,0.1,0.1,0.1,0.2c0.9,2.7,3.1,4.7,5.9,5.3c0.1,0,0.2,0,0.3,0.1 c0.5,0.1,0.9,0.3,1.4,0.3h9.8c4.4,0,8.1-3.6,8.1-8.1c0-4.4-3.6-8.1-8.1-8.1h0.2c0,0-26.6-47.4-21.4-64.2 c23.7-37.2,36.5-72.5,36.5-72.5c5.1-11.6,18.2-20.5,20-21.7c4-2.7,9.5-6.1,10-11.3C-822.2,986.7-826,981.7-827.3,979.5z" /> </g>
 
-</svg>
-                <span className="text-white font-serif font-bold text-lg">     
+                </svg>
+                <span className="text-white font-serif font-bold text-lg">
                   &nbsp;DOMI</span>
               </div>
               <p className="text-gray-400 mb-6">
                 Elegancia atemporal que habla por ti. Descubre la joya perfecta para cada momento especial.
               </p>
             </div>
-            
+
             <div>
               <h3 className="text-lg font-semibold mb-4">Colecciones</h3>
               <ul className="space-y-2 text-gray-400">
@@ -393,7 +405,7 @@ function App() {
                 <li><a href="#" className="hover:text-yellow-400 transition-colors">Eterna</a></li>
               </ul>
             </div>
-            
+
             <div>
               <h3 className="text-lg font-semibold mb-4">Atención al Cliente</h3>
               <ul className="space-y-2 text-gray-400">
@@ -403,7 +415,7 @@ function App() {
                 <li><a href="#" className="hover:text-yellow-400 transition-colors">Garantía</a></li>
               </ul>
             </div>
-            
+
             <div>
               <h3 className="text-lg font-semibold mb-4">Contacto</h3>
               <div className="space-y-3 text-gray-400">
@@ -422,7 +434,7 @@ function App() {
               </div>
             </div>
           </div>
-          
+
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
             <p>&copy; 2024 DOMI Joyas. Todos los derechos reservados. | Diseño con amor para mujeres excepcionales.</p>
           </div>
