@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { 
   Star, 
   Truck, 
@@ -17,6 +17,14 @@ import {
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [email, setEmail] = useState('');
+  const [bgVisible, setBgVisible] = useState(false);
+
+  // Pre-carga la imagen y activa el fade-in solo cuando esté lista
+  useEffect(() => {
+    const img = new window.Image();
+    img.src = '/src/assets/model-left.png';
+    img.onload = () => setBgVisible(true);
+  }, []);
 
   const collections = [
     {
@@ -146,21 +154,25 @@ function App() {
       {/* Hero Section */}
       <section
         id="inicio"
-        className="relative pt-20 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden"
-        style={{
-          backgroundImage: "url('/src/assets/model-left.png')",
-          backgroundSize: '30%',
-          backgroundPosition: 'left',
-          backgroundRepeat: 'no-repeat',
-        }}
+        className="relative pt-20 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden bg-white"
       >
-        <div className="absolute inset-0 bg-black/10 pointer-events-none" />
+        {/* Imagen de fondo con fade-in solo cuando esté cargada */}
+        <div
+          className={`absolute inset-0 z-0 bg-no-repeat bg-left bg-contain bg-fade-in-slow${bgVisible ? ' visible' : ''}`}
+          style={{
+            backgroundImage: "url('/src/assets/model-left.png')",
+            backgroundSize: '35%',
+            backgroundPosition: 'left',
+          }}
+        />
+        {/* Overlay oscuro */}
+        <div className="absolute inset-0 bg-black/10 pointer-events-none z-10" />
         {/* Sparkle overlay */}
-        <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute inset-0 pointer-events-none z-20">
           <div className="w-full h-full sparkle-animation" />
         </div>
-        <div className="relative max-w-7xl mx-auto">
-          <div className="text-center py-20">
+        <div className="relative max-w-7xl mx-auto z-30">
+          <div className="text-center py-20 pl-20">
             <h1 className="text-5xl md:text-7xl font-serif font-light text-gray-900 mb-8 leading-tight">
               Descubre la joya que
               <span className="block text-yellow-600 font-medium">habla por ti</span>

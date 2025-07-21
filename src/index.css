@@ -97,3 +97,12 @@ html {
     background-position: 0% 0%;
   }
 }
+
+/* Fade-in muy lento para imagen de fondo del Hero section */
+.bg-fade-in-slow {
+  opacity: 0;
+  transition: opacity 3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.bg-fade-in-slow.visible {
+  opacity: 1;
+}
