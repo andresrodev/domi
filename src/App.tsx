@@ -14,6 +14,7 @@ import {
   ArrowRight
 } from 'lucide-react';
 import WhatsappIcon from './components/icons/WhatsappIcon';
+import modelLeft from './assets/model-left.png';
 
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
   // Pre-carga la imagen y activa el fade-in solo cuando esté lista
   useEffect(() => {
     const img = new window.Image();
-    img.src = '/src/assets/model-left.png';
+    img.src = modelLeft
     img.onload = () => setBgVisible(true);
   }, []);
 
