@@ -13,6 +13,8 @@ import {
   Facebook,
   ArrowRight
 } from 'lucide-react';
+import WhatsappIcon from './components/icons/WhatsappIcon';
+
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,19 +30,49 @@ function App() {
 
   const collections = [
     {
-      name: "Luz de Luna",
-      description: "Piezas plateadas con destellos mágicos que capturan la esencia de la noche",
-      image: "https://images.pexels.com/photos/1413420/pexels-photo-1413420.jpeg?auto=compress&cs=tinysrgb&w=600"
+      name: "Aros doble detalle",
+      description: "Unos aros con doble detalle que reflejan la luz desde cada ángulo.",
+      image: "/images/jewerly/earrings/round-earring.jpg"
     },
     {
-      name: "Raíces Doradas",
-      description: "Inspiración natural y tonos cálidos que conectan con tu esencia más auténtica",
-      image: "https://images.pexels.com/photos/1927259/pexels-photo-1927259.jpeg?auto=compress&cs=tinysrgb&w=600"
+      name: "Aros flor brillantes",
+      description: "🌟 Cada pétalo refleja la luz con un brillo especial. Unos aros que combinan delicadeza y modernidad.",
+      image: "/images/jewerly/earrings/shiny-flower-earring.jpeg"
     },
     {
-      name: "Eterna",
-      description: "Joyas minimalistas de uso diario que trascienden tendencias y épocas",
-      image: "https://images.pexels.com/photos/1191531/pexels-photo-1191531.jpeg?auto=compress&cs=tinysrgb&w=600"
+      name: "Aros ovalado",
+      description: "Porque la elegancia también está en la forma: un aro ovalado, delicado y lleno de estilo.",
+      image: "/images/jewerly/earrings/oval-earring.jpg"
+    },
+    {
+      name: "Collar",
+      description: "Sencillez y elegancia en cada detalle. ✨ Esta pulsera de plata es el toque perfecto para cualquier look.",
+      image: "/images/jewerly/necklace/necklace.jpeg"
+    },
+    {
+      name: "Aros Gotas",
+      description: "Gotas de luz para brillar siempre ✨Estos aros combinan elegancia y brillo en un diseño atemporal.Perfectos para darle a tu look ese toque único que nunca pasa de moda.",
+      image: "/images/jewerly/earrings/drop-earring.jpg"
+    },
+    {
+      name: "Pulsera",
+      description: "Combina con todo, luce siempre ✨Diseñada para ser parte de tu día a día, sin perder la delicadeza ni la elegancia.Una joya lista para acompañarte en cualquier ocasión. ",
+      image: "/images/jewerly/bracelets/bracelet.jpg"
+    },
+    {
+      name: "Aros flor",
+      description: "Un toque de naturaleza en tu estilo Nuestros aros en forma de flor son una pieza que combina elegancia y delicadeza. Un diseño para realzar tu estilo con un toque natural y atemporal⠀",
+      image: "/images/jewerly/earrings/flower-earrings.jpg"
+    },
+    {
+      name: "Collar con dije corazón",
+      description: "Este hermoso collar con dije de corazón está diseñado para brillar en cada momento especial. Con delicadas incrustaciones de colores que simbolizan amor, alegría y elegancia",
+      image: "/images/jewerly/necklace/heart-necklace.jpeg"
+    },
+    {
+      name: "Aros mandala",
+      description: "Luce única con nuestros aretes de mandala en plata. Diseño elegante para quienes saben que los detalles hacen la diferencia.",
+      image: "/images/jewerly/earrings/1.jpg"
     }
   ];
 
@@ -266,7 +298,12 @@ function App() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <div className="absolute bottom-6 left-6 right-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 opacity-0 group-hover:opacity-100">
                     <button className="w-full bg-white/90 backdrop-blur-sm text-gray-900 py-3 rounded-full font-medium hover:bg-white transition-colors">
-                      Ver Colección
+                    <a target="_blank" href={`https://wa.me/56938821888?text=Hola%2C+estoy+interesado+en+este+producto%3A+${collection.name}`}>
+                      <span>
+                         <WhatsappIcon className="w-8 h-8 text-green-500 top-2 ml-1 absolute left-16" />
+                      </span>
+                      Consultar stock
+                    </a>
                     </button>
                   </div>
                 </div>
@@ -360,7 +397,9 @@ function App() {
 
           <div className="flex justify-center space-x-4 mb-8">
             <button className="bg-white/10 hover:bg-white/20 p-4 rounded-full transition-colors duration-300">
-              <Instagram className="w-6 h-6" />
+              <a target="_blank" href="https://www.instagram.com/domijoyas.cl/">
+                <Instagram className="w-6 h-6" />
+              </a>
             </button>
             <button className="bg-white/10 hover:bg-white/20 p-4 rounded-full transition-colors duration-300">
               <Facebook className="w-6 h-6" />
@@ -429,7 +468,7 @@ function App() {
                 </div>
                 <div className="flex items-center">
                   <MapPin className="w-5 h-5 mr-3 text-yellow-400" />
-                  <span>Bogotá, Colombia</span>
+                  <span>Santiago, Chile</span>
                 </div>
               </div>
             </div>
