@@ -14,7 +14,6 @@ import {
   ArrowRight
 } from 'lucide-react';
 import WhatsappIcon from './components/icons/WhatsappIcon';
-import modelLeft from './assets/model-left.png';
 
 
 function App() {
@@ -25,7 +24,7 @@ function App() {
   // Pre-carga la imagen y activa el fade-in solo cuando esté lista
   useEffect(() => {
     const img = new window.Image();
-    img.src = modelLeft
+    img.src = '/images/model-left.png'
     img.onload = () => setBgVisible(true);
   }, []);
 
@@ -193,7 +192,7 @@ function App() {
         <div
           className={`absolute inset-0 z-0 bg-no-repeat bg-left bg-contain bg-fade-in-slow${bgVisible ? ' visible' : ''}`}
           style={{
-            backgroundImage: "url('/src/assets/model-left.png')",
+            backgroundImage: "url('/images/model-left.png')",
             backgroundSize: '35%',
             backgroundPosition: 'left',
           }}
