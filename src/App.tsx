@@ -224,10 +224,13 @@ function App() {
             <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
               Cada pieza cuenta una historia única de elegancia, diseño atemporal y sofisticación felina
             </p>
-            <button className="bg-gradient-to-r from-yellow-500 to-yellow-600 text-white px-12 py-4 rounded-full text-lg font-medium hover:from-yellow-600 hover:to-yellow-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
-              Explora la Colección
-              <ArrowRight className="w-5 h-5 inline-block ml-2" />
+            <a href="#colecciones">
+              <button className="bg-gradient-to-r from-yellow-500 to-yellow-600 text-white px-12 py-4 rounded-full text-lg font-medium hover:from-yellow-600 hover:to-yellow-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+                
+                Explora la Colección
+                <ArrowRight className="w-5 h-5 inline-block ml-2" />
             </button>
+            </a>
           </div>
         </div>
       </section>
@@ -279,7 +282,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif font-light text-gray-900 mb-6">
-              Nuestras <span className="text-yellow-600">Colecciones</span>
+              Nuestra <span className="text-yellow-600">Coleccion</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Cada colección captura una esencia única, diseñada para acompañar diferentes momentos de tu vida
